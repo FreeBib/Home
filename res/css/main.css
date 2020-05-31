@@ -15,6 +15,7 @@ main {
 
 .codeblock {
     font-family: 'Source Code Pro', monospace;
+    margin: auto;
     background-color: #FFF;
     border: 1px solid #D1D5DA;
 }
