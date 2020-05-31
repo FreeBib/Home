@@ -1,16 +1,8 @@
 <?php
 
-require_once('Util/Connection.php');
+$View = "Home";
 
+require_once('Views/Components/Header.php');
 ensureSecureConnection();
-
-/**
- * Include Database Initialization
- */
-require_once('Util/Database.php');
-
-/**
- * Display the Homepage
- */
-require_once('Views/Home.php');
-
+require_once("Views/$View.php");
+require_once('Views/Components/Footer.php');
