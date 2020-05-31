@@ -22,7 +22,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
                     <?php
 
                     $line_number = 0;
-                    $lines = preg_split("\n{1}", $code_sample[4], -1, PREG_SPLIT_DELIM_CAPTURE);
+                    $lines = preg_split("\n{1}", $code_sample[4]);
 
                     foreach ($lines as $line) {
                         printf("<tr class=\"line\">");
