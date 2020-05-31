@@ -1,16 +1,8 @@
 <?php
 
-/**
- * Ensure the connection is secure.
- */
-$https = filter_input(INPUT_SERVER, 'HTTPS', FILTER_SANITIZE_STRING);
+require_once('Util/Connection.php');
 
-if (!$https) {
-    $uri = filter_input(INPUT_SERVER, 'REQUEST_URI', FILTER_SANITIZE_STRING);
-
-    header("Location: https://freebib.org$uri\n", true, 301);
-    exit();
-}
+ensureSecureConnection();
 
 /**
  * Include Database Initialization
