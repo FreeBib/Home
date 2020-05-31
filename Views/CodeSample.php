@@ -1,6 +1,6 @@
 <?php require_once('Views/Components/Header.php'); ?>
-<main style="width: 600px; max-width: 95%;">
-    <div class="codeblock">
+<main>
+    <div class="codeblock" style="width: 600px; max-width: 95%;">
         <div class="codeblock-info">
             <p>Code Sample</p>
         </div>
