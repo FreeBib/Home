@@ -1,7 +1,9 @@
 <?php
 
-if (!$View) {
+if (!$_GET['View']) {
     $View = "Home";
+} else {
+    $View = $_GET['View'];
 }
 
 require_once('Views/Components/Header.php');
