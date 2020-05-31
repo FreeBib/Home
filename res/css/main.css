@@ -13,12 +13,18 @@ main {
     text-align: center;
 }
 
+
+
+.code-block {
+    border: 1px solid #D1D5DA;
+}
+
 .code {
     font-family: 'Source Code Pro', monospace;
     background: #292929;
     color: #FAFAFA;
     font-size: 16px;
-    padding: 10px;
+    padding: 0;
     text-align: left;
 }
 
