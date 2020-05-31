@@ -21,32 +21,25 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
                 <tbody>
                     <?php
 
-                    $line = strtok($code_sample[4], "\n");
+                    $line_number = 0;
+                    $lines = preg_split("\n{1}", $code_sample[4], -1, PREG_SPLIT_DELIM_CAPTURE);
 
-                    while ($line) {
+                    foreach ($lines as $line) {
                         printf("<tr class=\"line\">");
                         printf("<td class=\"line-numbers\">%d</td>", ++$line_number);
                         printf("<td class=\"line-content\">%s</td>", $line);
                         printf("</tr>");
-
-                        $line = strtok("\n");
                     }
 
-                    // $line_number = 0;
-        
-                    // foreach ($db->query('SELECT code FROM CodeExamples') as $code_sample) {
-                    //     $line = strtok($code_sample[0], "\n");
+                    // $line = strtok($code_sample[4], "\n");
 
-                    //     while ($line) {
-                    //         printf("<tr class=\"line\">");
-                    //         printf("<td class=\"line-numbers\">%d</td>", ++$line_number);
-                    //         printf("<td class=\"line-content\">%s</td>", $line);
-                    //         printf("</tr>");
+                    // while ($line) {
+                    //     printf("<tr class=\"line\">");
+                    //     printf("<td class=\"line-numbers\">%d</td>", ++$line_number);
+                    //     printf("<td class=\"line-content\">%s</td>", $line);
+                    //     printf("</tr>");
 
-                    //         $line = strtok("\n");
-                    //     }
-
-                    //     break;
+                    //     $line = strtok("\n");
                     // }
         
                     ?>
