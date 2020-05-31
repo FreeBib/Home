@@ -18,6 +18,7 @@ main {
     margin: auto;
     background-color: #FFF;
     border: 1px solid #D1D5DA;
+    color: #24292E;
 }
 
 .codeblock-info {
@@ -29,7 +30,6 @@ main {
 
 .code {
     font-family: 'Source Code Pro', monospace;
-    color: #FAFAFA;
     font-size: 16px;
     padding: 0;
     text-align: left;
