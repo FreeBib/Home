@@ -12,7 +12,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
     $statement->closeCursor();
 ?>
 <main>
-    <div class="codeblock" style="width: 950px; max-width: 95%;">
+    <div class="codeblock">
         <div class="codeblock-info">
             <p><?= $code_sample[1] ?></p>
         </div>
