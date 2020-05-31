@@ -31,7 +31,7 @@ main {
 .code {
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
-    line-height: 1.5px;
+    line-height: 1.5;
     padding: 0;
     text-align: left;
     border-bottom-left-radius: 2px;
