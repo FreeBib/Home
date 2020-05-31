@@ -51,3 +51,6 @@ main {
     cursor: pointer;
 }
 
+.line {
+    white-space: pre;
+}
