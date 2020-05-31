@@ -15,9 +15,9 @@
                         $line = strtok($code_sample[0], "\n");
 
                         while ($line) {
-                            printf("<tr>");
+                            printf("<tr class=\"line\">");
                             printf("<td class=\"line-numbers\">%d</td>", ++$line_number);
-                            printf("<td class=\"line\">%s</td>", $line);
+                            printf("<td class=\"line-content\">%s</td>", $line);
                             printf("</tr>");
 
                             $line = strtok("\n");
