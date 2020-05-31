@@ -16,7 +16,7 @@
 
                         while ($line) {
                             printf("<tr>");
-                            printf("<td>%d</td>", ++$line_number);
+                            printf("<td class=\"line-numbers\">%d</td>", ++$line_number);
                             printf("<td>%s</td>", $line);
                             printf("</tr>");
 
