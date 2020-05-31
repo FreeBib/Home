@@ -5,14 +5,30 @@
             <p>Code Sample</p>
         </div>
         <div class="code">
-        <?php
+            <table>
+                <tbody>
+                    <?php
+
+                    $line_number = 0;
         
-        foreach ($db->query('SELECT code FROM CodeExamples') as $code_sample) {
-            // echo "<pre class=\"code\">$code_sample[0]</pre>";
-            echo $code_sample[0];
-        }
+                    foreach ($db->query('SELECT code FROM CodeExamples') as $code_sample) {
+                        $line = strtok($code_sample[0], " \n\t");
+
+                        while ($line) {
+                            printf("<tr>");
+                            printf("<td>%d</td>", ++$line_number);
+                            printf("<td>%s</td>", $line);
+                            printf("</tr>");
+
+                            $line = strtok(" \n\t");
+                        }
+
+                        break;
+                    }
         
-        ?>
+                    ?>
+                </tbody>
+            </table>
         </div>
     </div>
 </main>
