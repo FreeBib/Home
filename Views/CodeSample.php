@@ -21,7 +21,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
                 <tbody>
                     <?php
 
-                    $line = strtok($code_sample[0], "\n");
+                    $line = strtok($code_sample[4], "\n");
 
                     while ($line) {
                         printf("<tr class=\"line\">");
