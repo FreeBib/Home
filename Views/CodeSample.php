@@ -1,6 +1,9 @@
 <?php require_once('Views/Components/Header.php'); ?>
 <main>
-    <div class="code-block">
+    <div class="codeblock">
+        <div class="codeblock-info">
+            <p>Code Sample</p>
+        </div>
         <div class="code">
         <?php
         

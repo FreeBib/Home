@@ -13,10 +13,17 @@ main {
     text-align: center;
 }
 
-
-
-.code-block {
+.codeblock {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #FFF;
     border: 1px solid #D1D5DA;
+}
+
+.codeblock-info {
+    background-color: #F6F8FA;
+    border: 1px solid #D1D5DA;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .code {
@@ -26,5 +33,7 @@ main {
     font-size: 16px;
     padding: 0;
     text-align: left;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
