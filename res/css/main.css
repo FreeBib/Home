@@ -37,7 +37,7 @@ main {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     overflow-x: auto;
-    overflow-y: hidden;;
+    overflow-y: hidden;
 }
 
 .line:hover {
