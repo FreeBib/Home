@@ -20,7 +20,7 @@
                             printf("<td>%s</td>", $line);
                             printf("</tr>");
 
-                            $line = strtok(" \n\t");
+                            $line = strtok("\n");
                         }
 
                         break;
