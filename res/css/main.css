@@ -28,7 +28,8 @@ main {
     background-color: #FFF;
     border: 1px solid #D1D5DA;
     color: #24292E;
-    width: 95%;
+    width: 1200px;
+    max-width: 95%;
 }
 
 .codeblock-info {
