@@ -14,7 +14,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 <main>
     <div class="codeblock" style="width: 950px; max-width: 95%;">
         <div class="codeblock-info">
-            <p>Code Sample</p>
+            <p><?= $code_sample[1] ?></p>
         </div>
         <div class="code">
             <table>
