@@ -1,6 +1,7 @@
 
 html, body {
     height: 100%;
+    font-family: 'Questrial', 'Arial', sans-serif;
 }
 
 main {
@@ -10,5 +11,14 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.code {
+    font-family: 'Source Code Pro', monospace;
+    background: #292929;
+    color: #FAFAFA;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
 }
 
