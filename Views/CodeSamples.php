@@ -2,8 +2,8 @@
 <main>
     <?php
 
-    foreach ($db->query('SELECT * FROM CodeExamples') as $codeExample) {
-        echo "<a href='/CodeSample.php?id=$codeExample[0]'>$codeExample[1]</a><br />";
+    foreach ($db->query('SELECT * FROM CodeSamples') as $codeSample) {
+        echo "<a href='/CodeSample.php?id=$codeSample[0]'>$codeSample[1]</a><br />";
     }
 
     ?>
