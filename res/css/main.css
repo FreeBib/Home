@@ -49,6 +49,7 @@ main {
     white-space: nowrap;
     vertical-align: top;
     cursor: pointer;
+    user-select: none;
 }
 
 .line {
