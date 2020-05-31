@@ -1,4 +1,12 @@
-<?php require_once('Views/Components/Header.php'); ?>
+<?php
+
+require_once('Views/Components/Header.php');
+
+if (!isset($_GET['id']) || empty($_GET['id'])) {
+    echo "<p style='color: red; text-style: bold;'>Example not found.</p>";
+} else {
+
+?>
 <main>
     <div class="codeblock" style="width: 950px; max-width: 95%;">
         <div class="codeblock-info">
@@ -32,4 +40,8 @@
         </div>
     </div>
 </main>
-<?php require_once('Views/Components/Footer.php'); ?>
+<?php
+
+}
+
+require_once('Views/Components/Footer.php'); ?>
