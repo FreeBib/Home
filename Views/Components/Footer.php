@@ -1,5 +1,6 @@
     <footer style="text-align: center;">
-        <a href="/code-examples.php">Code Examples</a>
+    <a href="/">Home</a> | 
+        <a href="/?View=CodeSample">Code Examples</a>
         <br />
         <p id="request-uri"><?= $uri ?></p>
     </footer>

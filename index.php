@@ -1,6 +1,8 @@
 <?php
 
-$View = "Home";
+if (!$View) {
+    $View = "Home";
+}
 
 require_once('Views/Components/Header.php');
 ensureSecureConnection();
