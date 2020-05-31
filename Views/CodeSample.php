@@ -12,7 +12,7 @@
                     $line_number = 0;
         
                     foreach ($db->query('SELECT code FROM CodeExamples') as $code_sample) {
-                        $line = strtok($code_sample[0], " \n\t");
+                        $line = strtok($code_sample[0], "\n");
 
                         while ($line) {
                             printf("<tr>");
