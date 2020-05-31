@@ -30,17 +30,6 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
                         printf("<td class=\"line-content\">%s</td>", $line);
                         printf("</tr>");
                     }
-
-                    // $line = strtok($code_sample[4], "\n");
-
-                    // while ($line) {
-                    //     printf("<tr class=\"line\">");
-                    //     printf("<td class=\"line-numbers\">%d</td>", ++$line_number);
-                    //     printf("<td class=\"line-content\">%s</td>", $line);
-                    //     printf("</tr>");
-
-                    //     $line = strtok("\n");
-                    // }
         
                     ?>
                 </tbody>
